@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0, minimum-scale=1.0,maximum-scale=1.0,viewport-fit=cover">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>智慧校园</title>
+    <style type="text/css">
+      * {
+        margin:0;
+        padding:0;
+      }
+      html{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        /*和header背景颜色一样，使工具条和header背景颜色一样*/
+        background-color: #000;
+      }
+      body {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-top: constant(safe-area-inset-top);
+        padding-bottom: constant(safe-area-inset-bottom);
+        background-color: #fff;
+      }
+      #wrapper {
+        height: 100%;
+      }
+      #app {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      #bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      #header {
+        position: relative;
+        flex: none;
+        height: 40px;
+        background-color: blue;
+      }
+      #content {
+        position: relative;
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: yellow;
+      }
+      #footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="app">
+        <div id="bg"></div>
+        <div id="header">this is headerthis is headerthis is headerthis is header</div>
+        <div id="content">this is contentthis is contentthis is contentthis is contentthis is contentthis is content</div>
+        <div id="footer">this is header</div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
