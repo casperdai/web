@@ -68,6 +68,18 @@
         width: 100px;
         background-color: green;
       }
+      .middle {
+        position: relative;
+      }
+      .middle::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+      }
     </style>
     <script type="text/javascript">
       function toLogin () {
@@ -78,8 +90,12 @@
   <body>
     <div id="wrapper">
       <div id="app">
-        <div id="bg"></div>
+        <!-- <div id="bg"></div> -->
         <a id="header" onclick="toLogin()">https://casperdai.github.io/web</a>
+        <div class="middle" style="background-color: red; font-size: 12px; line-height: 36px;">xxxxxxxxxxxx</div>
+        <div class="middle" style="background-color: white; font-size: 16px; line-height: 36px;">xxxxxxxxxxxx</div>
+        <div class="middle" style="background-color: red; font-size: 12px; line-height: 1;;">xxxxxxxxxxxx</div>
+        <div class="middle" style="background-color: white; font-size: 16px; line-height: 1;">xxxxxxxxxxxx</div>
         <div id="content">this is contentthis is contentthis is contentthis is contentthis is contentthis is content</div>
         <a id="footer" href="https://wxpay.wxutil.com/mch/pay/h5.v2.php">this is footer</a>
       </div>
