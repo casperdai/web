@@ -90,12 +90,52 @@
       }
       .font-family__pingfang {
         font-size: 24px;
-        font-family: PingFang-SC-Regular;
+        font-family: 'PingFang SC';
         font-weight: 400;
       }
       .font-family__pingfang--bold {
         font-size: 24px;
+        font-family: 'PingFang SC Bold';
+        font-weight: bold;
+      }
+      .font-family__pingfang--bold2 {
+        font-size: 24px;
+        font-family: 'PingFang SC Bold';
+      }
+      .font-family__pingfang2 {
+        font-size: 24px;
+        font-family: PingFang-SC;
+        font-weight: 400;
+      }
+      .font-family__pingfang2--bold {
+        font-size: 24px;
         font-family: PingFang-SC-Bold;
+      }
+      .font-family__pingfang2--bold2 {
+        font-size: 24px;
+        font-family: PingFang2-SC-Bold2;
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: 'pingfang';
+        src: url('./static/PingFang-Regular.ttf');
+      }
+      @font-face {
+        font-family: 'pingfangb';
+        src: url('./static/PingFang-Bold.ttf');
+      }
+      .pingfang {
+        font-size: 24px;
+        font-family: 'pingfang';
+        font-weight: 400;
+      }
+      .pingfang--bold {
+        font-size: 24px;
+        font-family: 'pingfangb';
+      }
+      .pingfang--bold2 {
+        font-size: 24px;
+        font-family: 'pingfangb';
         font-weight: bold;
       }
     </style>
@@ -114,10 +154,17 @@
         <div class="middle" style="background-color: white; font-size: 16px; line-height: 36px;">xxxxxxxxxxxx</div>
         <div class="middle" style="background-color: red; font-size: 12px; line-height: 1;;">xxxxxxxxxxxx</div>
         <div class="middle" style="background-color: white; font-size: 16px; line-height: 1;">xxxxxxxxxxxx</div>
-        <div class="normal">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-        <div class="normal--bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-        <div class="font-family__pingfang">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-        <div class="font-family__pingfang--bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+        <div class="normal">ABCDEFGHIJKLMNOPQRSTUVWXYZ normal</div>
+        <div class="normal--bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ normal bold</div>
+        <div class="font-family__pingfang">ABCDEFGHIJKLMNOPQRSTUVWXYZ PingFang SC</div>
+        <div class="font-family__pingfang--bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ PingFang SC Bold</div>
+        <div class="font-family__pingfang--bold2">ABCDEFGHIJKLMNOPQRSTUVWXYZ PingFang SC Bold2</div>
+        <div class="font-family__pingfang2">ABCDEFGHIJKLMNOPQRSTUVWXYZ PingFang-SC</div>
+        <div class="font-family__pingfang2--bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ PingFang-SC-Bold</div>
+        <div class="font-family__pingfang2--bold2">ABCDEFGHIJKLMNOPQRSTUVWXYZ PingFang-SC-Bold2</div>
+        <div class="pingfang">ABCDEFGHIJKLMNOPQRSTUVWXYZ add PingFang SC</div>
+        <div class="pingfang--bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ add PingFang SC Bold</div>
+        <div class="pingfang--bold2">ABCDEFGHIJKLMNOPQRSTUVWXYZ add PingFang SC Bold2</div>
         <div id="content">this is contentthis is contentthis is contentthis is contentthis is contentthis is content</div>
         <a id="footer" href="https://wxpay.wxutil.com/mch/pay/h5.v2.php">this is footer</a>
       </div>
