@@ -17,8 +17,21 @@
 
       xml.onreadystatechange = function () {
         str += 'readyState:' + xml.readyState + '---status:' + xml.status + '</br>'
-        log.innerHTML = str
+        if(xml.readyState==4&&xml.status==200) {
+          str += xml.responseText
+        }
         console.log(str)
+        log.innerHTML = str
+      }
+      xml.onerror = function (error) {
+        str += error + '</br>'
+        log.innerHTML = str
+      };
+
+      // Handle timeout
+      xml.ontimeout = function handleTimeout() {
+        str += 'timeout</br>'
+        log.innerHTML = str
       }
       xml.open("POST","http://221.126.239.242/icapp/banner/loadAll",false);
       xml.send()
