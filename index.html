@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1,viewport-fit=cover"><link rel=icon href=favicon.ico><title>Ocean Park</title><style type=text/css>#loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateY(-50%)  translateX(-50%);
+        transform: translateY(-50%)  translateX(-50%);
+        z-index: 999;
+      }
+      @-webkit-keyframes ball-beat {
+        50% {
+          opacity: 0.2;
+          -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+        }
+
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @keyframes ball-beat {
+        50% {
+          opacity: 0.2;
+          -webkit-transform: scale(0.75);
+          transform: scale(0.75); }
+
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      #loading .ball-beat > div {
+        display: inline-block;
+        background-color: #279fcf;
+        width: 15px;
+        height: 15px;
+        border-radius: 100% !important;
+        margin: 2px;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation: ball-beat 0.7s 0s infinite linear;
+        animation: ball-beat 0.7s 0s infinite linear;
+      }
+      #loading .ball-beat > div:nth-child(2n-1) {
+        -webkit-animation-delay: 0.35s !important;
+        animation-delay: 0.35s !important;
+      }</style><link href=css/chunk-3fb76df0.c47bb383.css rel=prefetch><link href=js/chunk-3fb76df0.6e842d84.js rel=prefetch><link href=css/app.6037d94c.css rel=preload as=style><link href=css/chunk-vendors.9d3b02a5.css rel=preload as=style><link href=js/app.32240f3c.js rel=preload as=script><link href=js/chunk-vendors.a263246b.js rel=preload as=script><link href=js/runtime.84da6d38.js rel=preload as=script><link href=css/chunk-vendors.9d3b02a5.css rel=stylesheet><link href=css/app.6037d94c.css rel=stylesheet></head><body><noscript><strong>We're sorry but ocean-park doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=loading><div class="loader-inner ball-beat"><div></div><div></div><div></div></div></div><div id=app></div><script src=js/runtime.84da6d38.js></script><script src=js/chunk-vendors.a263246b.js></script><script src=js/app.32240f3c.js></script></body></html>
